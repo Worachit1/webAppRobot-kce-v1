@@ -14,8 +14,6 @@ import { useNavigate } from "react-router-dom";
 import ScreenLayout from "../components/ScreenLayout.jsx";
 import Logo from "../components/Logo.jsx";
 
-const TEST_PASSWORD = "AMECAMR26";
-
 function Home() {
   const navigate = useNavigate();
   const [pendingPath, setPendingPath] = useState(null);
@@ -34,16 +32,6 @@ function Home() {
     setError("");
   };
 
-  const submitPassword = () => {
-    if (password === TEST_PASSWORD) {
-      const target = pendingPath;
-      closeDialog();
-      navigate(target);
-    } else {
-      setError("รหัสผ่านไม่ถูกต้อง");
-    }
-  };
-
   const onKeyDown = (e) => {
     if (e.key === "Enter") submitPassword();
   };
@@ -51,25 +39,25 @@ function Home() {
   return (
     <ScreenLayout title="หน้าหลัก" onBack={() => {}} showBack={false} onHome={() => navigate("/")}>
       <Logo />
-      <Box sx={{ display: "flex", gap: 2, width: "100%", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", gap: 5, width: "100%", justifyContent: "center" }}>
         <Button
           variant="contained"
           color="primary"
-          sx={{ flex: 1, borderRadius: 999, py: 1.2 }}
+          sx={{ flex: 1, borderRadius: "4px", py: 3.0 }}
           onClick={() => navigate("/order/robot")}
         >
-          สั่งงาน
+        เครื่อง
         </Button>
         <Button
           variant="contained"
           color="inherit"
-          sx={{ flex: 1, borderRadius: 999, py: 1.2, bgcolor: "#c8c8c8" }}
+          sx={{ flex: 1, borderRadius: "4px", py: 3.0, bgcolor: "#c8c8c8" }}
           onClick={() => navigate("/cancel")}
         >
-          ยกเลิกงาน
+          stucker
         </Button>
       </Box>
-      <Button
+      {/* <Button
         variant="contained"
         color="primary"
         sx={{ borderRadius: 999, width: "100%", py: 1.4 }}
@@ -84,7 +72,7 @@ function Home() {
         onClick={() => navigate("/status")}
       >
         สถานะหุ่นยนต์
-      </Button>
+      </Button> */}
     </ScreenLayout>
   );
 }

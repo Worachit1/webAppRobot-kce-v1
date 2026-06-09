@@ -9,7 +9,9 @@
       "id": "rcs-1",
       "name": "RCS-1",
       "baseUrl": "http://192.168.1.200:7000",
-      "areaIds": [5, 6, 7]
+      "areaIds": [
+        1
+      ]
     }
   ],
   "robots": [
@@ -21,60 +23,171 @@
       "imageUrl": "/assets/C040.jpg"
     }
   ],
-  "pickupFloors": [
+  "carts": [
     {
-      "id": "f1",
-      "name": "Floor 1",
-      "spots": [
+      "id": "cart1",
+      "name": "Cart1",
+      "barcode_text": "0000000000"
+    }
+  ],
+  "pickupLocactions": [
+    {
+      "location": [
         {
-          "id": "p-f1-test",
-          "name": "testf1",
-          "rcsPosition": "testf1"
+          "id": "l1",
+          "name": "Location1",
+          "rcsPosition": "Location1",
+          "barcode_text": "1111111111"
+        },
+        {
+          "id": "l1",
+          "name": "Location1",
+          "rcsPosition": "Location1",
+          "barcode_text": "2222222222"
         }
       ]
     },
     {
-      "id": "f2",
-      "name": "Floor 2",
-      "spots": [
+      "buffers": [
         {
-          "id": "p-f2-test",
-          "name": "testf2",
-          "rcsPosition": "testf2"
+          "id": "bu1-01",
+          "name": "Buffer1-01",
+          "rcsPosition": "Buffer1-01"
         },
         {
-          "id": "p-f2-test-2",
-          "name": "testf2-v2",
-          "rcsPosition": "testf2-v2"
+          "id": "bu1-02",
+          "name": "Buffer1-02",
+          "rcsPosition": "Buffer1-02"
+        },
+        {
+          "id": "bu1-03",
+          "name": "Buffer1-03",
+          "rcsPosition": "Buffer1-03"
+        },
+        {
+          "id": "bu1-04",
+          "name": "Buffer1-04",
+          "rcsPosition": "Buffer1-04"
+        },
+        {
+          "id": "bu1-05",
+          "name": "Buffer1-05",
+          "rcsPosition": "Buffer1-05"
+        },
+        {
+          "id": "bu2-01",
+          "name": "Buffer2-01",
+          "rcsPosition": "Buffer2-01"
+        },
+        {
+          "id": "bu2-02",
+          "name": "Buffer2-02",
+          "rcsPosition": "Buffer2-02"
+        },
+        {
+          "id": "bu2-03",
+          "name": "Buffer2-03",
+          "rcsPosition": "Buffer2-03"
+        },
+        {
+          "id": "bu2-04",
+          "name": "Buffer2-04",
+          "rcsPosition": "Buffer2-04"
+        },
+        {
+          "id": "bu2-05",
+          "name": "Buffer2-05",
+          "rcsPosition": "Buffer2-05"
+        }
+      ]
+    },
+    {
+      "machines": [
+        {
+          "id": "mc-01",
+          "name": "Machine-01",
+          "rcsPosition": "Machine-01"
         }
       ]
     }
   ],
   "dropFloors": [
     {
-      "id": "f1",
-      "name": "Floor 1",
-      "spots": [
+      "location": [
         {
-          "id": "p-f1-test",
-          "name": "testf1",
-          "rcsPosition": "testf1"
+          "id": "l1",
+          "name": "Location1",
+          "rcsPosition": "Location1",
+          "barcode_text": "1111111111"
+        },
+        {
+          "id": "l1",
+          "name": "Location1",
+          "rcsPosition": "Location1",
+          "barcode_text": "2222222222"
         }
       ]
     },
     {
-      "id": "f2",
-      "name": "Floor 2",
-      "spots": [
+      "buffers": [
         {
-          "id": "p-f2-test",
-          "name": "testf2",
-          "rcsPosition": "testf2"
+          "id": "bu1-01",
+          "name": "Buffer1-01",
+          "rcsPosition": "Buffer1-01"
         },
         {
-          "id": "p-f2-test-2",
-          "name": "testf2-v2",
-          "rcsPosition": "testf2-v2"
+          "id": "bu1-02",
+          "name": "Buffer1-02",
+          "rcsPosition": "Buffer1-02"
+        },
+        {
+          "id": "bu1-03",
+          "name": "Buffer1-03",
+          "rcsPosition": "Buffer1-03"
+        },
+        {
+          "id": "bu1-04",
+          "name": "Buffer1-04",
+          "rcsPosition": "Buffer1-04"
+        },
+        {
+          "id": "bu1-05",
+          "name": "Buffer1-05",
+          "rcsPosition": "Buffer1-05"
+        },
+        {
+          "id": "bu2-01",
+          "name": "Buffer2-01",
+          "rcsPosition": "Buffer2-01"
+        },
+        {
+          "id": "bu2-02",
+          "name": "Buffer2-02",
+          "rcsPosition": "Buffer2-02"
+        },
+        {
+          "id": "bu2-03",
+          "name": "Buffer2-03",
+          "rcsPosition": "Buffer2-03"
+        },
+        {
+          "id": "bu2-04",
+          "name": "Buffer2-04",
+          "rcsPosition": "Buffer2-04"
+        },
+        {
+          "id": "bu2-05",
+          "name": "Buffer2-05",
+          "rcsPosition": "Buffer2-05"
+        }
+      ]
+    },
+    {
+      "machines": [
+        {
+          "id": "mc-01",
+          "name": "Machine-01",
+          "rcsPosition": "Machine-01"
         }
       ]
     }

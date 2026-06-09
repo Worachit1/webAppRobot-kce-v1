@@ -12,6 +12,7 @@ import OrderSuccess from "./pages/OrderSuccess.jsx";
 import History from "./pages/History.jsx";
 import Cancel from "./pages/Cancel.jsx";
 import Status from "./pages/Status.jsx";
+import ScanLocation from "./pages/ScanLocation.jsx";
 
 function isAuthed() {
   return Boolean(localStorage.getItem("authUser"));
@@ -98,6 +99,15 @@ function App() {
           element={
             <RequireAuth>
               <Status />
+            </RequireAuth>
+          }
+        />
+
+         <Route
+          path="/scanlocation"
+          element={
+            <RequireAuth>
+              <ScanLocation />
             </RequireAuth>
           }
         />
