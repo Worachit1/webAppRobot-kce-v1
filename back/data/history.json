@@ -1,5 +1,45 @@
 [
   {
+    "orderId": "1781152417236535188",
+    "robotId": "c040",
+    "robotName": "C040",
+    "pickup": {
+      "id": "bu1-01",
+      "name": "Buffer1-01",
+      "rcsPosition": "Buffer1-01"
+    },
+    "drop": {
+      "id": "mc-01",
+      "name": "Machine-01",
+      "rcsPosition": "Machine-01"
+    },
+    "status": "SEND_FAILED",
+    "createdAt": "2026-06-11T04:33:37.236Z",
+    "startedAt": "2026-06-11T04:33:37.236Z",
+    "finishedAt": "2026-06-11T04:33:58.287Z",
+    "error": "connect ETIMEDOUT 192.168.1.200:7000"
+  },
+  {
+    "orderId": "1781151278245152697",
+    "robotId": "c040",
+    "robotName": "C040",
+    "pickup": {
+      "id": "bu1-01",
+      "name": "Buffer1-01",
+      "rcsPosition": "Buffer1-01"
+    },
+    "drop": {
+      "id": "mc-01",
+      "name": "Machine-01",
+      "rcsPosition": "Machine-01"
+    },
+    "status": "SEND_FAILED",
+    "createdAt": "2026-06-11T04:14:38.246Z",
+    "startedAt": "2026-06-11T04:14:38.246Z",
+    "finishedAt": "2026-06-11T04:14:59.307Z",
+    "error": "connect ETIMEDOUT 192.168.1.200:7000"
+  },
+  {
     "orderId": "1781091050447811881",
     "robotId": "c040",
     "robotName": "C040",
